@@ -7,7 +7,7 @@ import reactor.core.publisher.Mono;
 public class Bot {
     public static void main(String[] args) {
 
-        DiscordClient client = DiscordClient.create("MTE3ODMwNjQ0NDI5NTE2MzkyNQ.GOGYlz.j1hHfbo_chStbkJKnvUcoDxPK-9woRRImS4GoE");
+        DiscordClient client = DiscordClient.create("");
 
         // This part of the code determines which messages in the chat to listen to
         Mono<Void> login = client.withGateway((GatewayDiscordClient gateway) ->
