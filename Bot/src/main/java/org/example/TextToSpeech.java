@@ -9,6 +9,8 @@ public class TextToSpeech {
 
     public static void main(String[] args) {
 
+        //Volgens mij is het een te oude labary en niet meer uptodate is voor nieuwere versie van Java
+
         try
         {
 //setting properties as Kevin Dictionary
