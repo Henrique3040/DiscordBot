@@ -21,10 +21,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Bot {
+
     //this is the list where we gonne safe our commands
     private static final Map<String, Command> commands = new HashMap<>();
 
     //here make we our first command to see if the bot works
+
     static {
         commands.put("hey", event -> event.getMessage().getChannel()
                 .flatMap(channel -> channel.createMessage("How are you?"))
