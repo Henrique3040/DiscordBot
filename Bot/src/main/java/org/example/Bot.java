@@ -21,8 +21,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Bot {
+
+
     private static final Map<String, Command> commands = new HashMap<>();
 
+    //this sends a message ("pong") to discord when some one sends the bot !ping
     static {
         commands.put("ping", event -> event.getMessage().getChannel()
                 .flatMap(channel -> channel.createMessage("Pong!"))
